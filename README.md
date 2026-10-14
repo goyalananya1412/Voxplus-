@@ -6,7 +6,7 @@ VoxPulse is an advanced speech analysis prototype designed to evaluate public sp
 
 ## 🔗 Project Quick Links
 
-* **Live Web Dashboard:** [Your Vercel Link Here]
+* **Project Repository:** https://github.com/jeetucodes/VoxPulse.git
 * **Demo Video (YouTube):** https://youtu.be/KNJX2IkGiLc?si=IhOerOl0Op-sg4pv
 
 ---
@@ -45,4 +45,4 @@ Prioritizing data quality over quantity, we have prepared a gradient spectrum of
 * **Ishita (Lead Data Engineer):** Dataset sourcing, text transcription alignment, and baseline generation.
 * **Ananya (Senior Backend Developer):** Core Python audio feature processing and mathematical framework mapping.
 * **Anshika (Application UI Developer):** HTML/JS responsive web panel building, Vercel deployment, and AI assistant integration.
-* 
+  
