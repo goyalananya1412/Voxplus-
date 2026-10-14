@@ -29,15 +29,33 @@
         "!pip -q install pyworld || echo 'pyworld failed - only the monotone flaw needs it'\n"
       ],
       "metadata": {
-        "id": "Q5gX9ArYB_SI"
+        "id": "Q5gX9ArYB_SI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1e63512e-d069-4d8b-a73e-de5871ae9714"
       },
       "id": "Q5gX9ArYB_SI",
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m10.4/10.4 MB\u001b[0m \u001b[31m26.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m11.4/11.4 MB\u001b[0m \u001b[31m32.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m261.0/261.0 kB\u001b[0m \u001b[31m3.6 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25h  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\n",
+            "  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\n",
+            "  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\n",
+            "  Building wheel for pyworld (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\n"
+          ]
+        }
+      ]
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 2,
       "id": "u4D5SjTJB1lr",
       "metadata": {
         "id": "u4D5SjTJB1lr"
