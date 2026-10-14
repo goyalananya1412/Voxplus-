@@ -7,7 +7,7 @@ VoxPulse is an advanced speech analysis prototype designed to evaluate public sp
 ## 🔗 Project Quick Links
 
 * **Live Web Dashboard:** [Your Vercel Link Here]
-* **Demo Video (YouTube):** [Your YouTube Link Here]
+* **Demo Video (YouTube):** https://youtu.be/KNJX2IkGiLc?si=IhOerOl0Op-sg4pv
 
 ---
 
