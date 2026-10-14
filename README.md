@@ -1,35 +1,27 @@
 # VoxPulse: Contrastive Speech Analytics & Temporal Flaw Grounding
 
 > **Multimodal AI Hackathon 2026 — Track C Submission**
-
-VoxPulse is an advanced speech evaluation system that constructs a custom contrastive dataset of "ideal" vs. "flawed" speeches, maps acoustic stress points using time-series analysis, and delivers actionable, rubric-based feedback via an interactive dashboard[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span).
-
----
-
-## 🚀 Project Overview
-Evaluating competitive spoken performances—such as Declamation, Extemporaneous, and Persuasive Oratory—is inherently subjective[span_2](start_span)[span_2](end_span). Judges often balance vocal delivery against textual quality, causing inconsistent scoring[span_3](start_span)[span_3](end_span). VoxPulse solves this by pairing master speech recordings with intentionally flawed variants to analyze acoustic discrepancies (pitch, energy, pacing, and pause intervals) and pinpoint exact regions of delivery failure[span_4](start_span)[span_4](end_span)[span_5](start_span)[span_5](end_span).
-
----
-
-## 📊 Custom Contrastive Dataset & Stress Testing
-Following the hackathon requirements, our custom dataset features:
-* **The "Good" Baseline:** Clean audio recordings and verified transcripts sourced from champion public speakers and prominent figures[span_6](start_span)[span_6](end_span).
-* **The "Bad" Spectrum:** Synthesized and self-recorded variants of the exact same transcripts featuring controlled delivery flaws (monotone delivery, rushing, awkward pauses, and fading volume)[span_7](start_span)[span_7](end_span).
-* **Dataset Access:** The complete structured dataset (audio files, transcripts, alignment labels, and JSON metadata) is accessible via our [Public Google Drive Link](YOUR_GOOGLE_DRIVE_LINK_HERE)[span_8](start_span)[span_8](end_span).
-
----
-
-## 🛠️ Architecture & Tech Stack
-* **Frontend:** Interactive web interface built using HTML, CSS, and JavaScript, deployed via Vercel for seamless audio/transcript uploads[span_9](start_span)[span_9](end_span).
-* **Backend Engine:** Standalone Python processing engine handling advanced feature extraction (FFT, MFCCs, pitch/F0 contours, pause intervals) and forced alignment[span_10](start_span)[span_10](end_span).
-* **Causal Explainability:** Translates raw mathematical deltas into structured, human-readable feedback regarding specific delivery flaws[span_11](start_span)[span_11](end_span).
-
----
-
-## ⚡ Local Setup & Installation
-
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/oomyfriendganesha/Voxpulse-.git](https://github.com/oomyfriendganesha/Voxpulse-.git)
-   cd Voxpulse-
-   
+VoxPulse - AI-Based Speech Quality Analyzer
+VoxPulse is an advanced speech analysis prototype designed to evaluate public speaking and spoken delivery failures. By removing subjective human opinions, this system provides objective performance metrics and easily actionable feedback through audio signal analytics.
+🔗 Project Quick Links
+Live Web Dashboard: Your Vercel Link Here
+Demo Video (YouTube): Your YouTube Link Here (Note: Insert your demo video link here)
+🛠️ Software Architecture (Decoupled Design)
+To make our project extremely lightweight and scalable, we have utilized a decoupled architecture:
+Frontend (UI Layer): Built with vanilla HTML5, CSS3, and JavaScript, deployed on Vercel for instantaneous rendering.
+Backend (Analytics Brain): A standalone Python pipeline that processes audio waveforms in a standard 16 kHz mono environment.
+Data Bridge: The frontend and backend communicate with each other via a structured JSON payload (evaluation_results.json).
+📊 Engineered Contrastive Dataset
+Prioritizing data quality over quantity, we have prepared a gradient spectrum of flaws on a single shared rhetorical transcript using ElevenLabs stability parameters:
+speech_01_normal.mp3 - Standard baseline reference model.
+speech_02_pause.mp3 - Monotone track with awkward structural silence breaks.
+speech_03_low_mumbling_volume.mp3 - Low energy whisper and inaudible speech track.
+speech_04_rushed.mp3 - Hyper-accelerated track with syntax distortion.
+⚙️ Core Technical Features
+Advanced Feature Extraction: Logarithmic Loudness Envelope (RMS dB) extraction using the librosa library and continuous F0 pitch tracking via the pYIN algorithm.
+Temporal Grounding: Extracting precise forced word alignment using the torchaudio MMS_FA CTC model and isolating exact millisecond deviation regions using Dynamic Time Warping (DTW).
+Causal Feedback & AI Coach: A JSON-parsed visual dashboard that translates numerical errors into color-coded Causal Explanation Cards and features an interactive AI Chat Assistant box.
+👥 Team Matrix & Roles
+Ishita (Lead Data Engineer): Dataset sourcing, text transcription alignment, and baseline generation.
+Ananya (Senior Backend Developer): Core Python audio feature processing and mathematical framework mapping.
+Anshika (Application UI Developer): HTML/JS responsive web panel building, Vercel deployment, and AI assistant integration.
